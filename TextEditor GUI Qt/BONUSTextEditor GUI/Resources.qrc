@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/IMG">
+        <file>add-text.png</file>
+        <file>display.png</file>
+        <file>empty-folder.png</file>
+        <file>lower-case.png</file>
+        <file>merge.png</file>
+        <file>save.png</file>
+        <file>search.png</file>
+        <file>upper-case.png</file>
+        <file>new.png</file>
+        <file>decryption.png</file>
+        <file>encrypted.png</file>
+        <file>1st.upper.png</file>
+    </qresource>
+</RCC>

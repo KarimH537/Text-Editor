@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>-10</y>
+      <width>811</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>809</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>798</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionAdd_text"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionMerge"/>
+    <addaction name="actionEmpty"/>
+    <addaction name="actionSearch"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionEncrypt"/>
+    <addaction name="actionDecrypt"/>
+    <addaction name="actionUpper_case"/>
+    <addaction name="actionLower_case"/>
+    <addaction name="action1st_Upper"/>
+   </widget>
+   <widget class="QMenu" name="menuCount">
+    <property name="title">
+     <string>Count</string>
+    </property>
+    <addaction name="actionWords"/>
+    <addaction name="actionCharacters"/>
+    <addaction name="actionLines"/>
+    <addaction name="actionWord_repetition"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuCount"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_text">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/IMG/add-text.png</normaloff>:/IMG/add-text.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add text</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/IMG/new.png</normaloff>:/IMG/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset>
+     <normalon>:/IMG/display.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionEmpty">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/IMG/empty-folder.png</normaloff>:/IMG/empty-folder.png</iconset>
+   </property>
+   <property name="text">
+    <string>Empty</string>
+   </property>
+  </action>
+  <action name="actionSearch">
+   <property name="icon">
+    <iconset>
+     <normalon>:/IMG/search.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Search</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset>
+     <normalon>:/IMG/save.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionEncrypt">
+   <property name="icon">
+    <iconset>
+     <normalon>:/IMG/encrypted.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Encrypt</string>
+   </property>
+  </action>
+  <action name="actionDecrypt">
+   <property name="icon">
+    <iconset>
+     <normalon>:/IMG/decryption.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Decrypt</string>
+   </property>
+  </action>
+  <action name="actionUpper_case">
+   <property name="icon">
+    <iconset>
+     <normalon>:/IMG/upper-case.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Upper case</string>
+   </property>
+  </action>
+  <action name="actionLower_case">
+   <property name="icon">
+    <iconset>
+     <normalon>:/IMG/lower-case.png</normalon>
+    </iconset>
+   </property>
+   <property name="text">
+    <string>Lower case</string>
+   </property>
+  </action>
+  <action name="action1st_Upper">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/IMG/1st.upper.png</normaloff>:/IMG/1st.upper.png</iconset>
+   </property>
+   <property name="text">
+    <string>1st Upper</string>
+   </property>
+  </action>
+  <action name="actionWords">
+   <property name="text">
+    <string>Words</string>
+   </property>
+  </action>
+  <action name="actionCharacters">
+   <property name="text">
+    <string>Characters</string>
+   </property>
+  </action>
+  <action name="actionLines">
+   <property name="text">
+    <string>Lines</string>
+   </property>
+  </action>
+  <action name="actionWord_repetition">
+   <property name="text">
+    <string>Word repetition</string>
+   </property>
+  </action>
+  <action name="actionMerge">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/IMG/merge.png</normaloff>:/IMG/merge.png</iconset>
+   </property>
+   <property name="text">
+    <string>Merge</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
